@@ -504,3 +504,5 @@ fabric.properties
 RunCounterBackend/RestAPI/runs.db
 RunCounter/.env
 RunCounterBackend/RestAPI/appsettings.json
+RunCounter/src/lib/env.ts
+RunCounterBackend/.idea/.idea.RunCounterBackend/.idea/dataSources.xml

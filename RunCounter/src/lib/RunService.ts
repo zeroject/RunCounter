@@ -1,13 +1,14 @@
 import axios from "axios";
 import { Run } from "@/lib/ent/run";
+import { url } from "./env";
 
 async function getRuns() {
-    const runs = await axios.get('http://localhost:5192/api/Runs');
+    const runs = await axios.get(url + '/Runs');
     return runs.data;
 };
 
 async function postRun(run: Run) {  
-    await axios.post('http://localhost:5192/api/Runs', run);
+    await axios.post(url + '/Runs', run);
 };
 
 export const RunService = {
